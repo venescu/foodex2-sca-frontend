@@ -1,0 +1,10 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - before: npm install
+    init: npm i -g polymer-cli  # runs during prebuild, e,g.: echo 'init script' 
+    command: polymer serve      # e.g.: echo 'start script'
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 8081
+    onOpen: open-preview
