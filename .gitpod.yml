@@ -2,7 +2,7 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: echo pwd
+  - before: npm install 
     command: polymer serve
     
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
